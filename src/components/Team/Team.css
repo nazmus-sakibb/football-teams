@@ -3,3 +3,8 @@
     text-align: center;
     border-radius: 10px;
 }
+
+.team-container img {
+    width: 100px;
+    height: auto;
+}

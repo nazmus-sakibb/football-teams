@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import Team from '../Team/Team';
 import './Home.css';
 
@@ -12,10 +13,13 @@ const Home = () => {
         .then(data => setTeams(data.teams));
     }, []);
     return (
-        <div className="teams-container">
-            {
-                teams.map(team => <Team team={team}></Team>)
-            }
+        <div>
+        <Header/>
+            <div  className="teams-container">
+                {
+                    teams.map(team => <Team team={team}></Team>)
+                }
+            </div>
         </div>
     );
 };
