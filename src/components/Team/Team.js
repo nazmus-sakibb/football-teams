@@ -1,6 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './Team.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const Team = (props) => {
     const {strTeam, strTeamBadge, idTeam} = props.team;
@@ -14,7 +16,7 @@ const Team = (props) => {
             <img src={strTeamBadge} alt=""/>
             <h3>{strTeam}</h3>
             <p>Sports type: Football</p>
-            <button onClick={() => handleClick(idTeam)}>Explore</button>
+            <button onClick={() => handleClick(idTeam)}>Explore <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
     );
 };

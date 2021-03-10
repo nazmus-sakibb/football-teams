@@ -15,10 +15,12 @@ const Home = () => {
     return (
         <div>
         <Header/>
-            <div  className="teams-container">
-                {
-                    teams.map(team => <Team team={team}></Team>)
-                }
+            <div  className="teams-area">
+                <div  className="teams-container">
+                    {
+                        teams.map(team => <Team team={team}></Team>)
+                    }
+                </div>
             </div>
         </div>
     );
