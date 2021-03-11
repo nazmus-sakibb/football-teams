@@ -12,7 +12,7 @@ import Gender from '../../Icon/gender.png';
 
 
 const TeamData = (props) => {
-    const { strTeam, intFormedYear, strCountry, strGender, strDescriptionEN, strTeamBanner, strFacebook, strTwitter, strYoutube } = props.teamData;
+    const { strTeam, intFormedYear, strCountry, strGender, strDescriptionEN, strTeamBanner, strSport } = props.teamData;
     
     let isMale;
     if(strGender === "Male"){
@@ -30,7 +30,7 @@ const TeamData = (props) => {
                     <h3>{strTeam}</h3>
                     <p><img src={Found} alt=""/> Founded: {intFormedYear}</p>
                     <p><img src={Flag} alt=""/> Country: {strCountry}</p>
-                    <p><img src={Football} alt=""/> Sport type: Football</p>
+                    <p><img src={Football} alt=""/> Sport type: {strSport}</p>
                     <p><img src={Gender} alt=""/> Gender: {strGender}</p>
                 </div>
                 <div className="team-data-img">
