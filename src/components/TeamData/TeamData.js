@@ -5,6 +5,10 @@ import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-i
 import './TeamData.css';
 import Male from '../../Icon/male.png';
 import Female from '../../Icon/female.png';
+import Flag from '../../Icon/flag.png';
+import Football from '../../Icon/football.png';
+import Found from '../../Icon/found.png';
+import Gender from '../../Icon/gender.png';
 
 
 const TeamData = (props) => {
@@ -24,10 +28,10 @@ const TeamData = (props) => {
             <div className="team-data-container">
                 <div className="team-info">
                     <h3>{strTeam}</h3>
-                    <p>Founded: {intFormedYear}</p>
-                    <p>Country: {strCountry}</p>
-                    <p>Sport type: Football</p>
-                    <p>Gender: {strGender}</p>
+                    <p><img src={Found} alt=""/> Founded: {intFormedYear}</p>
+                    <p><img src={Flag} alt=""/> Country: {strCountry}</p>
+                    <p><img src={Football} alt=""/> Sport type: Football</p>
+                    <p><img src={Gender} alt=""/> Gender: {strGender}</p>
                 </div>
                 <div className="team-data-img">
                     {isMale}
@@ -39,9 +43,9 @@ const TeamData = (props) => {
                 <p>{strDescriptionEN}</p>
                 <br />
                 <div className="social-icons">
-                    <a href="https://twitter.com/"><FontAwesomeIcon className="font-icon" icon={faTwitter}/></a>
-                    <a href="https://www.facebook.com/"><FontAwesomeIcon className="font-icon" icon={faFacebook}/></a>
-                    <a href="https://www.youtube.com/"><FontAwesomeIcon className="font-icon" icon={faYoutube}/></a>
+                    <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon className="font-icon twitter" icon={faTwitter}/></a>
+                    <a href="https://www.facebook.com/" target="_blank"><FontAwesomeIcon className="font-icon" icon={faFacebook}/></a>
+                    <a href="https://www.youtube.com/" target="_blank"><FontAwesomeIcon className="font-icon youtube" icon={faYoutube}/></a>
                 </div>
             </div>
 

@@ -53,6 +53,28 @@
     margin: 10px;
 }
 
+.twitter {
+    color: #1DA1F2;
+}
+
+.twitter:hover {
+    color: #1b5172;
+}
+
+.youtube {
+    color: red;
+}
+
+.youtube:hover {
+    color: rgb(161, 18, 18);
+}
+
+
+.team-info p img {
+    width: 20px;
+    height: auto;
+}
+
 
 @media (max-width: 768px){
     .team-data-container{
