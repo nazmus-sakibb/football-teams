@@ -12,7 +12,6 @@ import { useEffect, useState } from 'react';
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import TeamDetail from "./components/TeamDetail/TeamDetail";
-import Header from "./components/Header/Header";
 
 function App() {
   return (
