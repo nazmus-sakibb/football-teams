@@ -16,18 +16,18 @@ const TeamData = (props) => {
     
     let isMale;
     if(strGender === "Male"){
-        isMale = <img src={Male} alt=""/>
+        isMale = <img className="img-fluid" src={Male} alt=""/>
     }
     else{
-        isMale = <img src={Female} alt=""/>
+        isMale = <img className="img-fluid" src={Female} alt=""/>
     }
 
     return (
-        <div  className="team-data">
+        <div className="team-data">
             <img src={strTeamBanner} alt=""/>
             <div className="team-data-container">
                 <div className="team-info">
-                    <h3>{strTeam}</h3>
+                    <h2>{strTeam}</h2>
                     <p><img src={Found} alt=""/> Founded: {intFormedYear}</p>
                     <p><img src={Flag} alt=""/> Country: {strCountry}</p>
                     <p><img src={Football} alt=""/> Sport type: {strSport}</p>

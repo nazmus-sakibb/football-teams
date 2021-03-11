@@ -23,15 +23,6 @@
     margin-top: 20px !important;
 }
 
-.team-data-img img{
-    display: inline-block;
-    width: 400px;
-}
-
-.team-data-img{
-    text-align: right;
-}
-
 .team-data-container,
 .team-description {
     width: 95%;
@@ -45,7 +36,7 @@
 
 .team-data-img,
 .team-info {
-    padding: 20px;
+    padding: 15px;
 }
 
 .font-icon {
@@ -80,21 +71,6 @@
     .team-data-container{
         display: block;
     }
-
-    .team-data-img{
-        text-align: center;
-    }
 }
 
-@media (max-width: 480px){
-    .team-data-img img{
-        width: 250px;
-    }
-}
-
-@media (max-width: 300px){
-    .team-data-img img{
-        width: 200px;
-    }
-}
 
