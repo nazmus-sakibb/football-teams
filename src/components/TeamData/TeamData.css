@@ -26,7 +26,6 @@
 .team-data-img img{
     display: inline-block;
     width: 400px;
-    
 }
 
 .team-data-img{
@@ -35,7 +34,7 @@
 
 .team-data-container,
 .team-description {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -47,5 +46,28 @@
 .team-data-img,
 .team-info {
     padding: 20px;
+}
+
+
+@media (max-width: 768px){
+    .team-data-container{
+        display: block;
+    }
+
+    .team-data-img{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    .team-data-img img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 300px){
+    .team-data-img img{
+        width: 200px;
+    }
 }
 
