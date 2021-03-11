@@ -48,6 +48,11 @@
     padding: 20px;
 }
 
+.font-icon {
+    font-size: 30px;
+    margin: 10px;
+}
+
 
 @media (max-width: 768px){
     .team-data-container{
