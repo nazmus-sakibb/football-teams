@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const Team = (props) => {
-    const {strTeam, strTeamBadge, idTeam} = props.team;
+    const {strTeam, strTeamBadge, idTeam, strSport} = props.team;
     const history = useHistory();
     const handleClick = (idTeam) => {
         const url = `/team/${idTeam}`;
@@ -15,7 +15,7 @@ const Team = (props) => {
         <div className="team-container">
             <img src={strTeamBadge} alt=""/>
             <h3>{strTeam}</h3>
-            <p>Sports type: Football</p>
+            <p>Sports type: {strSport}</p>
             <button onClick={() => handleClick(idTeam)}>Explore <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
     );
